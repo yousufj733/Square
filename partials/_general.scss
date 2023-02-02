@@ -1,0 +1,141 @@
+
+
+
+
+
+html
+{
+    scroll-behavior: smooth;
+}
+body 
+{
+    background: rgba($primary-color-varient, 0.1);
+    color: $dark-color;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+    line-height: 1.5;
+
+}
+.container 
+{
+    width:$container-lg;
+    margin: 0 auto;
+}
+
+img 
+{
+    display: block;
+    width:100%;
+}
+a 
+{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5 
+{
+    line-height: 1.2;
+    color: $white-color;
+   
+}
+h1 {   font-size: 2.8rem;  }
+h2 {   font-size: 2.5rem;  }
+h3 {   font-size: 2rem;  }
+h4 {   font-size: 1.8rem;  }
+h5 {   font-size: 1.5rem;  }
+section
+{
+    margin-top: 6rem;
+
+& > h2 
+{
+    text-align: center;
+}
+
+& > p 
+{
+    text-align: center;
+    width: 45%;
+    margin: 0.6rem auto 2.5rem;
+    
+}
+
+}
+
+// Common Heading 
+.heading
+{
+    color: $black-color;
+}
+
+// Common Paragraph  
+.paragraph
+{
+   padding: 2rem 0 3rem;
+}
+
+
+.nav__logo 
+{
+    color: $primary-color;
+}
+
+.btn 
+{
+    @include button();
+}
+
+.btn-primary
+{
+    @include button($white-color,$secondary-color);
+}
+
+
+
+
+.btn-white
+{
+    background-color: white;
+    color: #000;
+}
+
+
+
+/*=================================== Media Queries ( Medium )
+============================================*/
+
+
+@media screen and (max-width:1024px)
+{
+   .container
+   {
+    width: $container-md;
+ 
+   }    
+   section
+   {
+ 
+    
+    & > p 
+    {
+        width:50%;
+        
+    }
+ 
+   }   
+}
+
+/*=================================== Media Queries ( Medium )
+============================================*/
+
+
+@media screen and (max-width:600px)
+{
+   section
+   {
+    & > p 
+    {
+        width: $container-md;
+        
+    }
+   }    
+}

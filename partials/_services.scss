@@ -1,0 +1,84 @@
+
+#services
+{
+    padding:  0 0 3rem;
+    // box-shadow: inset 0 1rem 1rem rgb(0, 0, 0,0.8);
+}
+
+.service_container
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.service__description h4 {
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+  }
+.bx
+{
+    font-size: 1.7rem;
+}
+
+article
+{
+    @include gradientBackground;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    height: fit-content;
+    transition: all 400ms ease;
+
+.service__description small 
+{
+    color: $white-color;
+    font-size: 0.8rem;
+}
+}
+
+
+/*=================================== Media Queries ( Laptop ) 
+============================================*/
+
+
+@media screen and (max-width:1024px)
+{
+
+    #services
+    {  
+        
+        .service_container
+        {
+         grid-template-columns: 1fr 1fr;
+        }
+        .container
+        {
+            gap: 1rem;
+          
+            article
+            {
+                padding: 1.2rem;
+                gap: 0.8rem;
+            }
+          
+        }
+      
+    }
+
+}
+
+/*=================================== Media Queries ( Mobile ) 
+============================================*/
+
+
+@media screen and (max-width:600px)
+{
+    #services
+    {
+        .service_container
+        {
+         grid-template-columns: 1fr;
+        }
+        }
+}

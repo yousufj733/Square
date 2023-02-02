@@ -1,0 +1,142 @@
+
+
+// Nav maenu css 
+nav 
+{
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    z-index: 10;
+    display: grid;
+    place-items: center;
+    @include gradientBackground;
+    box-shadow: 0 1rem 1rem rgba($black-color, 0.1);
+
+
+    .container
+    {
+     
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+
+        ul
+        {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+        a 
+        {
+            color: $white-color;
+            font-weight:400;
+            font-size: 0.9rem;
+        }
+        button 
+        {
+            display: none;
+        }
+
+        .nav__logo h3 
+        {
+            color: $white-color;
+        }
+    }
+}
+
+
+
+
+/*=================================== Media Queries ( Medium ) 
+============================================*/
+
+
+@media screen and (max-width:1024px)
+{
+
+    nav 
+    {
+        .container
+        {
+            button 
+            {
+                display: inline-block;
+                background: transparent;
+                color: $white-color!important;
+                cursor: pointer;
+                font-size: 2rem;
+            }
+            #close__nav-btn
+           {
+            display: none;
+           }
+
+        //    mobile menu css
+         ul
+           {
+            position: fixed;
+            right: 0%;
+            top: 5rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0;
+            display: none;
+            perspective: 300px;
+         
+
+         li 
+           {
+            width: 100%;
+            opacity: 0;
+            animation: filpNavItem 900ms ease forwards;
+            transform-origin: top;
+
+            li:nth-child(2)
+            {
+                        animation-delay: 300ms;
+            }
+            li:nth-child(3)
+            {
+                        animation-delay: 600ms;
+            }
+            li:nth-child(4)
+            {
+                        animation-delay: 900ms;
+            }
+            li:nth-child(5)
+            {
+                        animation-delay: 1200ms;
+            }
+
+
+            @keyframes filpNavItem {
+               
+                0%{
+                    transform: rotateX(90deg);
+                }
+                100%
+                {
+                    transform: rotateX(0deg);
+                    opacity: 1;
+                }
+            }
+
+            a 
+            {
+                color: $white-color;
+                height: 100%;
+                display: block;
+                padding: 1.5rem 2rem;
+                background: linear-gradient($primary-color-varient,darken($primary-color-varient,12%));
+         
+                &.btn
+                {
+                    background: $secondary-color;
+                }
+           }
+           }
+         
+        }
+    }
+}
+}
