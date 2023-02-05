@@ -13,7 +13,7 @@ nav
     box-shadow: 0 1rem 1rem rgba($black-color, 0.1);
 
 
-    .container
+    .main__nav
     {
      
         display: flex;
@@ -56,7 +56,7 @@ nav
 
     nav 
     {
-        .container
+        .main__nav
         {
             button 
             {
@@ -139,4 +139,19 @@ nav
         }
     }
 }
+}
+
+/*=================================== Media Queries ( Phone ) 
+============================================*/
+
+
+@media screen and (max-width:600px)
+{
+    nav 
+    {
+        .container
+        {
+            width: 80%;
+        }
+    }
 }

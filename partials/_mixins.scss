@@ -17,8 +17,17 @@
 }
 
 
+// common background color 
+
 @mixin gradientBackground 
 {
     background: linear-gradient(135deg,$primary-color,$primary-color-varient);
+    color:$white-color;
+}
+
+@mixin gradientBackground2 
+{
+    // background: linear-gradient(195deg,$primary-color-varient,$primary-color);
+    background: transparent;
     color:$white-color;
 }

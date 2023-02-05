@@ -3,7 +3,7 @@
 {
     padding:  0 0 3rem;
     // box-shadow: inset 0 1rem 1rem rgb(0, 0, 0,0.8);
-}
+
 
 .service_container
 {
@@ -14,8 +14,9 @@
 .service__description h4 {
     margin-bottom: 1.2rem;
     font-size: 1.3rem;
+    color:white;
   }
-.bx
+i
 {
     font-size: 1.7rem;
 }
@@ -30,13 +31,13 @@ article
     height: fit-content;
     transition: all 400ms ease;
 
-.service__description small 
+.service__description  small 
 {
-    color: $white-color;
+    color: $white-color!important;
     font-size: 0.8rem;
 }
 }
-
+}
 
 /*=================================== Media Queries ( Laptop ) 
 ============================================*/

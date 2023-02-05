@@ -1,8 +1,5 @@
 
 
-
-
-
 html
 {
     scroll-behavior: smooth;
@@ -12,7 +9,7 @@ body
     background: rgba($primary-color-varient, 0.1);
     color: $dark-color;
     font-family: 'Montserrat', sans-serif;
-    user-select: none;
+    // user-select: none;
     line-height: 1.5;
 
 }
@@ -31,7 +28,13 @@ a
 {
     text-decoration: none;
 }
-h1,h2,h3,h4,h5 
+h1,h2,h4
+{
+    line-height: 1.2;
+    color: $black-color;
+}
+
+h3,h5 
 {
     line-height: 1.2;
     color: $white-color;
@@ -44,7 +47,7 @@ h4 {   font-size: 1.8rem;  }
 h5 {   font-size: 1.5rem;  }
 section
 {
-    margin-top: 6rem;
+    margin-top: 5rem;
 
 & > h2 
 {
@@ -90,7 +93,10 @@ section
 }
 
 
-
+small 
+{
+    color: #000;
+}
 
 .btn-white
 {
@@ -98,7 +104,10 @@ section
     color: #000;
 }
 
-
+section
+{
+    padding: 5rem 0;
+}
 
 /*=================================== Media Queries ( Medium )
 ============================================*/
@@ -106,11 +115,11 @@ section
 
 @media screen and (max-width:1024px)
 {
-   .container
-   {
-    width: $container-md;
- 
-   }    
+    .container 
+    {
+        width:$container-md;
+        margin: 0 auto;
+    }  
    section
    {
  
@@ -124,13 +133,18 @@ section
    }   
 }
 
-/*=================================== Media Queries ( Medium )
+/*=================================== Media Queries ( Mobile )
 ============================================*/
 
 
 @media screen and (max-width:600px)
 {
-   section
+    .container 
+    {
+        width:$container-sm;
+        margin: 0 auto;
+    }  
+    section
    {
     & > p 
     {
