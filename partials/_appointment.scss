@@ -1,0 +1,72 @@
+.appointment
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    gap: 2rem;
+}
+
+.appointment__left
+{
+    flex-basis: 55%;
+    
+}
+.appointment__details
+{
+    display: flex;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+
+.appointment__details i 
+{
+    background-color: hotpink;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.appointment__details h5 ,p
+{
+    color: #000;
+}
+.appoinment__right 
+{
+    flex-basis: 35%;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+label 
+{
+    font-size: 1rem;
+    display: inline-block;
+}
+
+  input,textarea,
+  select option,
+  select {
+    width: 100%;
+    padding:0.85rem 1rem;
+    line-height: 1.4;
+    margin: 2rem 0;
+    display: block;
+    appearance: none;
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    resize: none;
+    // -webkit-transition: 0.35s ease-in-out;
+    // -moz-transition: 0.35s ease-in-out;
+    // -o-transition: 0.35s ease-in-out;
+    // transition: 0.35s ease-in-out;
+    // transition: all 0.35s ease-in-out;
+  }

@@ -25,6 +25,7 @@ nav
             display: flex;
             gap: 3rem;
             align-items: center;
+            
         }
         a 
         {
@@ -82,15 +83,15 @@ nav
             gap: 0;
             display: none;
             perspective: 300px;
-         
-
+            width: 322px;
+        
          li 
            {
             width: 100%;
             opacity: 0;
             animation: filpNavItem 900ms ease forwards;
             transform-origin: top;
-
+             text-align: center;
             li:nth-child(2)
             {
                         animation-delay: 300ms;
@@ -127,11 +128,18 @@ nav
                 height: 100%;
                 display: block;
                 padding: 1.5rem 2rem;
-                background: linear-gradient($primary-color-varient,darken($primary-color-varient,12%));
+                background: rgba(90, 36, 177,0.9);
          
                 &.btn
                 {
-                    background: $secondary-color;
+                    
+                        background: #480ca8;;
+
+                    width: 322px;
+                }
+                &.btn:hover 
+                {
+                    color: wheat;
                 }
            }
            }
@@ -152,6 +160,9 @@ nav
         .container
         {
             width: 80%;
-        }
+    
+
+       
+}
     }
 }

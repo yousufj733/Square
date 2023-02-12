@@ -75,11 +75,22 @@ article
 
 @media screen and (max-width:600px)
 {
+  .container 
+  {
+    padding: 0 0.9rem;
+  }
+ 
     #services
     {
+        padding: 0rem;
         .service_container
         {
          grid-template-columns: 1fr;
         }
+        }
+
+        .service__description small 
+        {
+            font-size: 12px!important;
         }
 }

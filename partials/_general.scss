@@ -18,7 +18,10 @@ body
     width:$container-lg;
     margin: 0 auto;
 }
-
+.my-5 
+{
+    padding: 2rem 0;
+}
 img 
 {
     display: block;
@@ -57,11 +60,16 @@ section
 & > p 
 {
     text-align: center;
-    width: 45%;
+    // width: 45%;
     margin: 0.6rem auto 2.5rem;
     
 }
 
+}
+.common__p 
+{
+   width: 50%;
+   padding: 2rem 0 3rem;
 }
 
 // Common Heading 
@@ -70,11 +78,7 @@ section
     color: $black-color;
 }
 
-// Common Paragraph  
-.paragraph
-{
-   padding: 2rem 0 3rem;
-}
+
 
 
 .nav__logo 
@@ -120,17 +124,14 @@ section
         width:$container-md;
         margin: 0 auto;
     }  
-   section
-   {
- 
-    
-    & > p 
-    {
-        width:50%;
-        
-    }
- 
-   }   
+
+    .common__p 
+{
+   width: 90%;
+   font-size: 12px;
+   
+}
+   
 }
 
 /*=================================== Media Queries ( Mobile )
@@ -143,13 +144,16 @@ section
     {
         width:$container-sm;
         margin: 0 auto;
+       
     }  
-    section
-   {
-    & > p 
-    {
-        width: $container-md;
-        
-    }
-   }    
+    .common__p 
+{
+   width: 90%;
+   font-size: 12px;
+   
+}  
+
+h2 {
+    font-size: 1.9rem;
+  }
 }
