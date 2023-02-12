@@ -1,0 +1,74 @@
+
+
+.mySwiper
+{
+    width: $container-lg;
+    margin: 0 auto;
+
+    
+    .swiper-wrapper
+    {    
+        margin-bottom:5rem ;
+        article
+        {
+            @include  gradientBackground;
+            // margin: 1rem 0;
+            padding: 1.5rem 2rem;
+            border-radius: 1rem;
+            cursor: default;
+            font-size: 0.9rem;
+            p{
+                padding: 2rem 0;
+                color:white;
+            }
+           .patients 
+           {
+            display: flex;
+            align-items: left;
+            flex-direction: column;
+            gap: 1rem;
+           
+            .avatar
+            {
+                width: 2.5rem;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            small{
+                color: white;
+            }
+           }
+        }
+    }
+}
+
+
+/*=================================== Media Queries ( Phone ) 
+============================================*/
+
+
+@media screen and (max-width:600px)
+{
+    
+
+    .mySwiper
+    {
+        width: $container-sm;
+      
+            width: 91% !important;
+         
+        .swiper-wrapper
+        {    
+            
+            article
+            {
+                 padding: 1rem;
+                  p
+                 {
+                  font-size: 12px;
+                 }
+            }
+}
+}
+}
