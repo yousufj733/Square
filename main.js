@@ -1,28 +1,55 @@
+// sticky menu 
+window.addEventListener('scroll', ()=> {
 
+  document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 0);
+
+})
 
 //Mobile Nav manu 
-const menu =document.querySelector("#nav__items");
-const openBtn =document.querySelector("#open__nav-btn");
-const closeBtn =document.querySelector("#close__nav-btn");
+const menu =document.querySelector('#nav__items');
+const openBtn =document.querySelector('#open__nav-btn');
+const closeBtn =document.querySelector('#close__nav-btn');
  
 
 openBtn.addEventListener('click',()=>{
 
-    menu.style.display="flex";
-    closeBtn.style.display="inline-block";
-    openBtn.style.display="none";
+    menu.style.display='flex';
+    closeBtn.style.display='inline-block';
+    openBtn.style.display='none';
  
  })
 
 
-closeBtn.addEventListener('click',()=>{
+const closeNav = () =>{
 
-    menu.style.display="";
-    closeBtn.style.display="none";
-    openBtn.style.display="";
+    menu.style.display='';
+    closeBtn.style.display='none';
+    openBtn.style.display='';
  
- })
-    // <!-- Initialize Swiper -->
+ }
+ closeBtn.addEventListener('click',closeNav);
+
+
+ //close when a menu is clicked
+if(window.innerWidth < 1024)
+{
+  document.querySelectorAll('#nav__items li a ').forEach(menu => {
+    menu.addEventListener('click',()=>{
+      closeNav();
+    })
+  })
+}
+
+
+
+
+
+
+
+
+
+
+    // <!-- Initialize Swiper SLIDER -->
 
  var swiper = new Swiper(".mySwiper", {
   // direction: 'horizontal',

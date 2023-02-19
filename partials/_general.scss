@@ -95,7 +95,10 @@ section
 {
     @include button($white-color,$secondary-color);
 }
-
+.btn-secondary
+{
+    @include button2($white-color,$primary-color);
+}
 
 small 
 {
@@ -125,13 +128,13 @@ section
         margin: 0 auto;
     }  
 
-    .common__p 
-{
-   width: 90%;
-   font-size: 12px;
-   
-}
-   
+        .common__p 
+        {
+        width: 90%;
+        font-size: 12px;
+
+        }
+
 }
 
 /*=================================== Media Queries ( Mobile )

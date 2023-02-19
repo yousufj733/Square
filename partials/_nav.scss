@@ -12,8 +12,26 @@ nav
     @include gradientBackground;
     box-shadow: 0 1rem 1rem rgba($black-color, 0.1);
 
-
-    .main__nav
+    &.window-scroll
+    {
+       background: $white-color!important;
+       .container 
+       {
+     
+        .nav__logo h3{
+            color: #480ca8!important;
+          }
+        a{
+            color: $black-color;
+            font-weight: 500;
+            font-size: 15px;
+        }
+      .btn  {
+            color: #e9e3f3!important;
+          }
+       }
+    }
+    .container
     {
      
         display: flex;
@@ -54,10 +72,34 @@ nav
 
 @media screen and (max-width:1024px)
 {
-
+ 
     nav 
-    {
-        .main__nav
+    {  &.window-scroll
+        {
+           background: $white-color!important;
+           .container 
+           {
+         
+            .nav__logo h3{
+                color: #480ca8!important;
+              }
+            a{
+                color: $white-color;
+                font-weight: 500;
+                font-size: 15px;
+            }
+          .btn  {
+                color: #e9e3f3!important;
+              }
+              button {
+                color: purple!important;
+                cursor: pointer;
+                font-size: 2rem;
+              }
+           }
+        }
+       
+        .container
         {
             button 
             {
@@ -67,6 +109,8 @@ nav
                 cursor: pointer;
                 font-size: 2rem;
             }
+
+           
             #close__nav-btn
            {
             display: none;
@@ -155,13 +199,21 @@ nav
 
 @media screen and (max-width:600px)
 {
+   
+   
+ 
     nav 
     {
+
         .container
         {
             width: 80%;
     
-
+            button {
+                color: purple;
+                cursor: pointer;
+                font-size: 2rem;
+              }
        
 }
     }

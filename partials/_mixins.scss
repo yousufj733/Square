@@ -16,6 +16,24 @@
     }
 }
 
+@mixin button2($textColor: $white-color, $backgroundColor:$primary-color)
+{
+    display: inline-block;
+    width: fit-content;
+    padding: .75rem 4rem;
+    background: $backgroundColor;
+    color:$textColor ;
+    cursor: pointer;
+    transition: all 400ms ease;
+
+
+    &:hover
+    {
+        background: lighten($backgroundColor, 80%);  //background:$white-color);
+        color: $black-color;
+    }
+}
+
 
 // common background color 
 

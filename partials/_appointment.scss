@@ -1,16 +1,11 @@
 .appointment
 {
-    display: flex;
-    align-items: flex-start;
-    justify-content:center;
-    gap: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
 }
 
-.appointment__left
-{
-    flex-basis: 55%;
-    
-}
+
 .appointment__details
 {
     display: flex;
@@ -20,7 +15,7 @@
 
 .appointment__details i 
 {
-    background-color: hotpink;
+    background-color: #480ca8;
     color: white;
     border-radius: 50%;
     width: 50px;
@@ -33,10 +28,6 @@
 .appointment__details h5 ,p
 {
     color: #000;
-}
-.appoinment__right 
-{
-    flex-basis: 35%;
 }
 
 
@@ -57,7 +48,7 @@ label
     width: 100%;
     padding:0.85rem 1rem;
     line-height: 1.4;
-    margin: 2rem 0;
+    margin: 0rem 0;
     display: block;
     appearance: none;
     background-color: #f9f9f9;
@@ -70,3 +61,64 @@ label
     // transition: 0.35s ease-in-out;
     // transition: all 0.35s ease-in-out;
   }
+
+
+  /*=================================== Media Queries ( Mobile ) 
+============================================*/
+
+
+@media screen and (max-width:1024px)
+{
+ 
+    .appointment
+    {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .appointment__desk h5 
+    {
+        font-size: 21px;
+    }
+    .appointment__left h2 
+    {
+        font-size: 31px;
+    }
+    .appointment__details
+    {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width:600px)
+{
+    p 
+    {
+        font-size: 12px!important;
+    }
+    .head
+    {
+        text-align: center;
+    }
+    .appointment
+    {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .appointment__desk
+    {
+        gap: 2rem;
+    }
+    .appointment__left h2 {
+        font-size: 24px;
+        margin: 1rem 0;
+      }
+      .appointment__desk h5 {
+        font-size: 17px;
+      }
+      .appointment__desk p 
+      {
+      
+        margin: 0.5rem 0;
+        opacity: 0.7;
+      }
+}

@@ -28,8 +28,8 @@
                 <li><a href="#Header">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#Specialists">Specialists</a></li>
-                <li><a href="#tetstimonials">Tetstimonials</a></li>
-                <li><a href="#appoinment" class="btn "> Appoinments </a></li>
+                <li><a href="#Testimonials">Tetstimonials</a></li>
+                <li><a href="#Appointments" class="btn "> Appoinments </a></li>
             </ul>
             <!-- <button id="open__nav-btn" title="open"><i class="uil uil-bars"></i></button> -->
             <button id="open__nav-btn" title="open"><i class="fa fa-bars" aria-hidden="true"></i></i></button>
@@ -51,12 +51,12 @@
                     magni excepturi corrupti vitae!</p>
 
                 <div class="header__btn">
-                    <a href="#appoinment" class="btn ">Make Appoinments</a>
+                    <a href="#Appointments" class="btn ">Make Appoinments</a>
                 </div>
             </div>
 
             <div class="header__image">
-                <img src="./img/hero-trans.png" alt="Header Hero Image">
+                <img src="./img/hero2.png" alt="Header Hero Image">
             </div>
         </div>
     </header>
@@ -324,8 +324,10 @@
 
     <div class="container appointment">
         <div class="appointment__left">
-            <h2>What Our Patients say</h2>
+          <div class="head">
+            <h2>Get An Appoinment</h2>
             <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis maioiaeiti architecto corporis enim optio similie, nesciunt que distincminus.</p>
+          </div>
 <!-- 1 -->
             <div class="appointment__details">
                 <div class="appointment__icon">
@@ -361,18 +363,20 @@
 
         <!-- FORM  -->
         <div class="appoinment__right">
-            <form action="" method="get" class="form-example">
+            <form   action="https://formspree.io/f/mayzoynn"
+            method="POST"  class="form-example">
                 <div class="form__group">
                   <label for="name">Name </label>
-                  <input type="text" placeholder="Enter your name:" id="name" required>
+                  <input type="text" placeholder="Enter your name:" name="Name" id="name" required>
                 </div>
                 <div class="form__group">
-                    <label for="name">Phone </label>
-                    <input type="number" placeholder="Enter phone Number:" id="phone" required>
+                    <label for="phone">Phone </label>
+                    <input type="number" placeholder="Enter phone Number:" 
+                    name="Phone" id="phone" required>
                   </div>
                   <div class="form__group">
                     <label for="date">Appoinment Date: </label>
-                    <input type="date" placeholder="Appoinment date" id="date" required>
+                    <input type="date" placeholder="Appoinment date" name="Appointment date" id="date" required>
                   </div>
                   <div class="form__group">
                   <label for="email">Email </label>
@@ -402,7 +406,7 @@
                    <textarea name="Added Message" id="message" rows="6" placeholder="Add a Message"  ></textarea>
                   </div> 
                     <!-- Btn   -->
-                  <input type="submit" value="Submit" class="btn btn-primary">
+                  <input type="submit" value="Submit" class="btn btn-secondary">
                 
               
              
@@ -414,9 +418,64 @@
 
 
 
+   <!-- ############################### Footer 
+############################# -->
+<footer>
+<div class="container footer">
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+   <article>
+    <a href="./index.html" class="nav__logo">
+        <h4>Square</h4>
+    </a>
+    <p>Loibus tempora quia accusant porro repellendus beatae.</p>
+   
+   </article>
+    <article> 
+    <h4>Support</h4>
+    
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Cookie Policy</a></li>
+    <li><a href="#">Purchasing Policy</a></li>
+    <li><a href="#">Terms & Conditions </a></li>
+    <li><a href="#">Career </a></li>
+   
+    </article>
+<article> 
+    <h4>Permalinks</h4>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Service</a></li>
+    <li><a href="#">Tetstimonials</a></li>
+    <li><a href="#">Specialist</a></li>
+</ul>
+</article>
+<article> 
+    <h4>Contact Us</h4>
+  
+    <li><a href="#Header">FAQ</a></li>
+    <li><a href="#services">Press</a></li>
+    <div class="social__footer">
+        <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    </div>
+ 
+
+</article>
+</div>
+
+<div class="copyright">
+   <div class="container">
+    <p>&copy;Copyright Square Hospital Online.</p>
+   </div>
+</div>
+
+
+</footer>
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 <script src="./main.js"></script>
 </body>
